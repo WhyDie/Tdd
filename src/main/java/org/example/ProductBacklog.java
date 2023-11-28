@@ -15,6 +15,7 @@ public class ProductBacklog {
 
     public void moveTask(Task task, Priority newPriority) {
         tasks.remove(task);
+        task.setPriority(newPriority);
         tasks.add(task);
     }
 
